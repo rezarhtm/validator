@@ -1,0 +1,20 @@
+  
+<link href="{{ url_for('static', filename='css/paper-dashboard.css')}}" rel="stylesheet" />
+<script src="{{ url_for('static', filename='js/core/jquery.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/jquery.checkboxall-1.0.min.js')}}"></script>
+<script>
+$(document).ready(function() {
+  $('.picts').checkboxall();
+})  
+</script>
+<script src="{{ url_for('static', filename='js/core/popper.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/core/bootstrap.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/plugins/perfect-scrollbar.jquery.min.js')}}"></script>
+
+<script src="../assets/js/plugins/chartjs.min.js"></script>
+<script src="../assets/js/plugins/bootstrap-notify.js"></script>
+<!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="{{ url_for('static', filename='js/paper-dashboard.min.js')}}" type="text/javascript"></script>
+<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
+
+</html>

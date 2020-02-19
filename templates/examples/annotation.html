@@ -1,0 +1,78 @@
+{% extends "headertop.html" %}
+{% block content %}
+<div class="main-panel">
+      <div class="content">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header ">
+				<h1>Annotations</h1>
+              </div>
+              <div class="card-body ">
+				<div class="row" style="padding-left:20px; padding-right:20px;">
+					<div class="anno-wrapper" style="width: 100%;">
+							<div class="ori-pict-wrapper col-md-12">
+								<center>
+									<h1>Original Pictures</h1>
+								</center>
+								<ul class="row list-inline">
+									{% for i in range(0, 5)%}
+									<li class="col-sm-2 col-md-2">
+										<img src={{url_for('static', filename='SWCP2.jpg')}}>
+									</li>
+									{% endfor %}
+								</ul>
+							</div>
+							<div class="all-pict-wrapper picts col-md-12">
+								<div style="text-align:right; padding:5px;">
+									<input type="checkbox" name="selectall-demo" id="selectall" class="all">
+									<label style="display: inline; color:black; font-weight:800;" for="selectall">Select all</label>									
+								</div>
+								<ul class="row list-inline allpics">
+									{% for i in range (0,33)%}
+									<li class="col-sm-2" style="margin: 5px;">
+										<input type="checkbox" name="check">
+										<img src={{url_for('static', filename='SWCP2.jpg')}}>
+									</li>
+									{% endfor %}
+								</ul>
+
+							<!--
+								<div class="picts col-md-12">
+
+									<input type="checkbox" name="selectall-demo" id="selectall" class="all">
+									<label style="display: inline; color:black; font-weight:800;" for="selectall">Select all</label>
+									<ul class="list-inline">
+										{% for i in range (0,33)%}
+										<li>
+											<input type="checkbox" name="check">
+											<img src={{url_for('static', filename='SWCP2.jpg')}}>
+										</li>
+										{% endfor %}
+									</ul>
+								</div>
+								-->
+							</div>
+							
+							<div style="clear: both;"></div>
+						</div>
+						<div class="col-md-12" style="text-align:right;">
+							<button type="button" class="btn btn-danger">Reject</button>
+							<button type="button" class="btn btn-warning">Skip</button>
+							<button type="button" class="btn btn-success">Submit</button>
+						</div>
+
+						<!--
+					<form class="form-inline md-form mr-auto mb-4">
+
+						<button type="button" class="btn btn-primary btm-sm btn-block" style="float: left;">Submit</button>
+					</form>
+					-->
+				</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--end -->
+	{% endblock %}

@@ -1,0 +1,58 @@
+.card-header{
+	font-size:10px; 
+}
+.card-header h1{
+	margin-bottom:0 !important;
+}
+
+.ori-pict-wrapper{
+	background-color: lightgray; padding-bottom:10px;
+	float:left;
+}
+.ori-pict-wrapper h1{
+	font-size:20px;
+	padding-top:10px;
+}
+.ori-pict-wrapper ul{
+	margin:0;
+	padding:0;
+}
+.ori-pict-wrapper li{
+	list-style: none;
+	padding: 5px;
+}
+.all-pict-wrapper{
+	float:right;
+	
+}
+.allpics{
+	max-height: 250px;
+	overflow: scroll;
+}
+
+.anno-wrapper{
+	margin-bottom:5px; width:100%;
+	
+	min-height: 500px;
+}
+
+
+.paymethod li{
+	padding:15px;
+	color: navy; font-weight:800;
+}
+
+.tab-content{
+	height: 530px;
+	overflow: scroll;
+}
+
+#menu1 img{
+	height: 100px; width:auto;
+	padding:15px;
+}
+
+#menu2 img{
+	height: 100px; width:auto;
+	padding:15px;
+}
